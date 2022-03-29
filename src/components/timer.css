@@ -1,0 +1,19 @@
+#timer {
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    width: 200px;
+    display: flex;
+    flex: column;
+    text-align: center;
+    line-height: 4px;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 15px;
+    height: 70px;
+}
+
+p>small {
+    font-size: 11px !important;
+}

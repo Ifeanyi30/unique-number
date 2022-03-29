@@ -1,0 +1,83 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root{
+  --body: #373737;
+  --gridcount: 5;
+}
+
+body{
+  background-color: var(--body);
+}
+
+.App{
+  background-color: #673e66;
+  padding: 10px 0px;
+  position: relative;
+  max-width: 70%;
+  margin: auto;
+}
+
+#hd {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+#hder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white !important;
+  align-items: center;
+}
+
+.c-g{
+  position: absolute;
+  width: 100%;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(var(--gridcount), auto);
+  grid-gap: 20px;
+  grid-auto-flow: row;
+  justify-items: center;
+}
+
+#uniqueNumber {
+  color: greenyellow;
+  font-size: 30px;
+}
+
+@media (max-width: 1026px) {
+  :root{
+  --body: #373737;
+  --gridcount: 4;
+}
+h1 {
+  font-size: 30px;
+}
+}
+
+@media (max-width: 846px) {
+  :root{
+  --body: #373737;
+  --gridcount: 3;
+}
+h1 {
+  font-size: 18px;
+}
+}
+
+@media (max-width: 621px) {
+  :root{
+  --body: #373737;
+  --gridcount: 2;
+}
+
+h1 {
+  font-size: 16px;
+}
+}
